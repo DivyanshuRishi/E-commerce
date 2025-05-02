@@ -4,12 +4,14 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import { useProductStore } from "../stores/useProductStore";
 
 const categories = [
-	{ href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
+	{ href: "/shirts", name: "Shirts", imageUrl: "/shirts.webp" }, // New Shirt category
 	{ href: "/t-shirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },
+	{ href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
 	{ href: "/shoes", name: "Shoes", imageUrl: "/shoes.jpg" },
-	{ href: "/glasses", name: "Glasses", imageUrl: "/glasses.png" },
-	{ href: "/jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
 	{ href: "/suits", name: "Suits", imageUrl: "/suits.jpg" },
+	{ href: "/jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
+	{ href: "/glasses", name: "Glasses", imageUrl: "/glasses.png" },
+	{ href: "/watches", name: "Watches", imageUrl: "/watches.jpg" }, // New Watch category
 	{ href: "/bags", name: "Bags", imageUrl: "/bags.jpg" },
 ];
 

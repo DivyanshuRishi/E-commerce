@@ -35,6 +35,32 @@ export const useWishlistStore = create((set, get) => ({
                 }
             },
     
+    // getWishlist: async () => {
+    //     const { checkAuth, user } = useUserStore.getState();
+    //     await checkAuth();
+    
+    //     if (!user) {
+    //         toast.error("Please log in to access your wishlist.");
+    //         return;
+    //     }
+    
+    //     set({ loading: true });
+    //     try {
+    //         const response = await axios.get('/wishlist');
+    //         const newWishlistData = response.data;
+    
+    //         // Compare new data with existing data before updating state
+    //         const currentWishlist = get().wishlist;
+    //         if (JSON.stringify(newWishlistData) !== JSON.stringify(currentWishlist)) {
+    //             set({ wishlist: newWishlistData });
+    //         }
+    //     } catch (error) {
+    //         console.error("Error fetching wishlist:", error);
+    //         toast.error("Failed to fetch wishlist.");
+    //     } finally {
+    //         set({ loading: false });
+    //     }
+    // },
 
     removeFromWishlist: async (productId) => {
         const { checkAuth, user } = useUserStore.getState();
@@ -103,3 +129,5 @@ export const useWishlistStore = create((set, get) => ({
     
     
 }));
+
+
